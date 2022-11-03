@@ -1,0 +1,50 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+			<style>
+				.txt{resize:none;}
+			</style>
+	</head>
+	
+	<body>
+	<textarea class="txt" cols="60px" rows="52px" readonly>
+	<html>
+ <head>
+ <script type="text/javascript">
+ function dom(rodzaj_d,kolor_d,rozmiar_d,cena_d)//początek konstruktora
+{
+this.rodzaj=rodzaj_d;
+this.kolor=kolor_d;
+this.rozmiar=rozmiar_d;
+this.cena=cena_d;
+}//koniec konstruktora
+ dom.prototype.wypisz = function () //definicja metody
+ {
+ alert(this.rodzaj + ' ' + this.kolor+ ' ' + this.rozmiar+ ' ' + this.cena + " zl");
+ };
+var mieszkanie1 = new dom("Nowoczesny", "Biały", "100m^2","200000"); // nowy obiekt mieszkanie1
+var mieszkanie2 = new dom('Skandynawski', 'Orzechowy', '125m^2','350000');
+var mieszkanie3 = new dom('Średniowieczny', 'Szary', '350m^2', '800000');
+mieszkanie1.wypisz(); // uruchomienie metody wypisz() dotyczącej mieszkania1
+mieszkanie2.wypisz();
+mieszkanie3.wypisz();
+ document.write("dostęp do właściwości"+"<br>");
+// poniżej dostęp do pól mieszkanie 1
+ document.write("mieszkanie 1"+" "+mieszkanie1.rodzaj+" "+mieszkanie1.kolor+" "+mieszkanie1.rozmiar+" "+mieszkanie1.cena+" zl"+ "<br>"); 
+ document.write("mieszkanie 2"+" "+mieszkanie2.rodzaj+" "+mieszkanie2.kolor+" "+mieszkanie2.rozmiar+" "+mieszkanie2.cena+" zl"+ "<br>");
+ document.write("mieszkanie 3"+" "+mieszkanie3.rodzaj+" "+mieszkanie3.kolor+" "+mieszkanie3.rozmiar+" "+mieszkanie3.cena+" zl"+ "<br>");
+ </script>
+28
+ </head>
+<body>
+<br>
+ programowanie obiektowe 
+</body>
+</html>
+	
+	
+	
+	
+	</textarea>
+	</body>
+</html>
